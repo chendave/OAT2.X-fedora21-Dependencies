@@ -1,5 +1,3 @@
-%define section	free
-
 Name:		monolog
 Version:	2.0
 Release:	1fc_1
@@ -77,7 +75,6 @@ cp -pr output/dist/jdoc/* $RPM_BUILD_ROOT%{_javadocdir}/%{name}-%{version}
 #(cd $RPM_BUILD_ROOT%{_javadocdir} && ln -sf %{name}-%{version} %{name})
 
 %clean
-rm -rf $RPM_BUILD_ROOT
 
 %post javadoc
 rm -f %{_javadocdir}/%{name}
